@@ -1,0 +1,54 @@
+
+:root
+{
+	--text-color: #000000;
+	--bg-color: #ffffff;
+	--hover-color: #efefef;
+	--active-color: #e5e5e5;
+	--line-color: #dbdbdb;
+	--msg-color: #daf0ff;
+	--shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark)
+{
+	:root
+	{
+		--text-color: #eeeeee;
+		--bg-color: #3a3a3a;
+		--hover-color: #545454;
+		--active-color: #6d6d6d;
+		--line-color: #878787;
+		--msg-color: #006375;
+		--shadow-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+*
+{
+	list-style: none;
+	margin-block: 0px;
+	margin-inline: 0px;
+	padding-inline: 0px;
+	
+	width: auto;
+	height: auto;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+ul
+{
+	margin-left: 5px;
+}
+
+li
+{
+	width: auto;
+	white-space: nowrap;
+	padding: 5px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding-left: 32px;
+	cursor:pointer;
+}
