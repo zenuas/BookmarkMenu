@@ -8,6 +8,8 @@ BookmarkMenuはブックマークをツールバーから表示するChrome拡�
 
 ## Installation
 
+[Chrome Web Store](https://chromewebstore.google.com/detail/bookmarkmenu/ojbjllhnlglkjnjagigpihocochcocjm)  
+
 ## Requirement
 
 * Google Chrome  
