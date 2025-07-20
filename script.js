@@ -5,7 +5,6 @@ window.addEventListener("load", () =>
 	
 	function processNodes(parent, nodes)
 	{
-		//console.log(nodes);
 		for(let i = 0; i < nodes.length; i++)
 		{
 			const node = nodes[i];
@@ -19,10 +18,11 @@ window.addEventListener("load", () =>
 			li.appendChild(document.createTextNode(node.title));
 			const url = new URL(chrome.runtime.getURL("/_favicon/"));
 			url.searchParams.set("pageUrl", node.url);
-			url.searchParams.set("size", "24");
+			url.searchParams.set("size", "16");
 			li.style.backgroundImage = `url(${url.toString()})`;
 			
-			li.onmousedown = (e) => {
+			li.onmousedown = (e) =>
+			{
 				chrome.tabs.create({ url: node.url, active: (e.button == 0) });
 				return false;
 			};
@@ -30,8 +30,8 @@ window.addEventListener("load", () =>
 		}
 	}
 	
-	chrome.bookmarks.getTree(nodes => {
-		
+	chrome.bookmarks.getTree(nodes =>
+	{
 		const ul = document.createElement("ul");
 		processNodes(ul, nodes);
 		body.appendChild(ul);

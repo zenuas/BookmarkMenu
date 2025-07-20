@@ -37,20 +37,14 @@
 	background-color: var(--bg-color);
 }
 
-ul
-{
-	margin-left: 5px;
-}
-
 li
 {
 	width: auto;
 	white-space: nowrap;
-	padding: 5px;
-	background-position: top left;
+	padding: 5px 0 5px 26px;
+	background-position: top 6px left 4px;
 	background-repeat: no-repeat;
-	padding-left: 32px;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 li:hover
