@@ -52,3 +52,8 @@ li
 	padding-left: 32px;
 	cursor:pointer;
 }
+
+li:hover
+{
+	background-color: var(--hover-color);
+}
