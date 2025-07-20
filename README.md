@@ -1,4 +1,4 @@
-# Mina [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+# BookmarkMenu [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 BookmarkMenu is Chrome extension bookmark-menu from toolbar  
 
