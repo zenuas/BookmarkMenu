@@ -1,7 +1,7 @@
 {
 	"name": "BookmarkMenu",
 	"description": "bookmark-menu from toolbar",
-	"version": "2025.07.21",
+	"version": "2025.07.22",
 	"manifest_version": 3,
 	"permissions": ["bookmarks", "favicon", "tabs"],
 	"action":

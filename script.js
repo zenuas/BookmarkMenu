@@ -21,10 +21,16 @@ window.addEventListener("load", () =>
 			url.searchParams.set("size", "16");
 			li.style.backgroundImage = `url(${url.toString()})`;
 			
-			li.onmousedown = (e) =>
+			let target;
+			li.onmousedown = e =>
 			{
-				chrome.tabs.create({ url: node.url, active: (e.button == 0) });
+				target = e.target;
 				return false;
+			};
+			li.onmouseup = e =>
+			{
+				if (target === e.target && (e.button == 0 || e.button == 1)) chrome.tabs.create({ url: node.url, active: (e.button == 0) });
+				target = undefined;
 			};
 			parent.appendChild(li);
 		}

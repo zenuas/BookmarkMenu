@@ -51,3 +51,8 @@ li:hover
 {
 	background-color: var(--hover-color);
 }
+
+li:active
+{
+	background-color: var(--active-color);
+}
